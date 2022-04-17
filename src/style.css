@@ -50,6 +50,8 @@ body{
 
 #currentCity{
   font-family:'bfccoffeeshop_1', 'Sanchez', serif;
+  font-weight: bold;
+  font-size: 50px;
 }
 
 #currentInfo {
