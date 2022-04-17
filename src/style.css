@@ -11,7 +11,7 @@ ul li {
 }
 
 table{
-  width:100%;
+  padding-inline-start:5px;
 }
 
 #currentDetails{
@@ -26,3 +26,4 @@ table{
   border: solid black 3px;
   text-align:center;
 }
+
