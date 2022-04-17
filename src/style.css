@@ -17,28 +17,21 @@ body{
   color: rgb(50, 34, 122);
   font-family: 'wonderul_wilderness_filled_Rg', Arial, sans-serif;
   text-align: center;
-  font-size: 75px;
+  font-size: 100px;
 }
 
 #transparentBox{
   background-color: rgba(255, 255, 255, 0.514);
-  border: solid black 3px;
+  border:transparent;
   position:sticky;
 }
 
 .row{
-  padding: 5px;;
+  padding: 5px;
 }
 
-table{
-  vertical-align: middle;
-  border-spacing: 20px;
-  margin:auto;
-}
-
-ul {
-  list-style-type: none;
-  padding-left: 0rem;
+#currentTemp{
+  font-size: 108px;
 }
 
 #currentDetails {
@@ -50,16 +43,6 @@ ul {
   text-align: right;
 }
 
-.forecastDays {
-  border: solid black 3px;
-  text-align: center;
-  padding:15px;
-}
-
-.forecastTemp{
-  font-family: 'Sanchez', serif;
-}
-
 #currentDescrip{
   font-family: 'Sanchez', serif;
 }
@@ -68,6 +51,34 @@ ul {
   font-family: 'Sanchez', serif;
 }
 
+table{
+  vertical-align: middle;
+  border-spacing: 5px;
+  margin:auto;
+  text-align: center;
+}
+
+.forecastDays {
+  border: solid black 3px;
+  text-align: center;
+  padding:15px;
+}
+
+ul{
+  display: block;
+  list-style-type: none;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0px;
+}
+
 .weekDay{
   font-family: 'Sanchez', serif;
 }
+
+.forecastTemp{
+  font-family: 'Sanchez', serif;
+}
+
