@@ -17,7 +17,7 @@
 }
 
 body{
-  background-image: url("Weather\ Wireframe\ \(1\).png");
+  background-image: url("Weather\ background.png");
   background-size: 100%;
   background-repeat:repeat-y;
 }
@@ -51,7 +51,7 @@ body{
 }
 
 .grid{
-  margin:auto;
+  row-gap: 3px;
   position:sticky;
   display:flex;
 }
