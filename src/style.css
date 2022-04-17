@@ -1,6 +1,15 @@
+@font-face{ 
+	font-family: 'MyWebFont';
+	src: url('WebFont.eot');
+	src: url('WebFont.eot?#iefix') format('embedded-opentype'),
+	     url('WebFont.woff') format('woff'),
+	     url('WebFont.ttf') format('truetype'),
+	     url('WebFont.svg#webfont') format('svg');
+}
+
 #mainHeading {
-  color: rgb(1, 199, 133);
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(50, 34, 122);
+  font-family: 'WebFont', Arial, sans-serif;
   text-align: center;
 }
 
@@ -11,6 +20,7 @@ ul li {
 
 #currentDetails {
   text-align: left;
+  font-family: 'Sanchez', serif;
 }
 
 #currentInfo {
@@ -20,4 +30,16 @@ ul li {
 .forecastDays {
   border: solid black 3px;
   text-align: center;
+}
+
+.forecastTemp{
+  font-family: 'Sanchez', serif;
+}
+
+#currentDescrip{
+  font-family: 'Sanchez', serif;
+}
+
+#dayTime{
+  font-family: 'Sanchez', serif;
 }
