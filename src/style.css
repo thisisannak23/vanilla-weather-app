@@ -1,4 +1,4 @@
-@font-face{ 
+/*@font-face{ 
 	font-family: 'wonderul_wilderness_filled_Rg';
 	src: url('wonderul_wilderness_filled_font-demo.html');
 	src: url('wonderul_wilderness_filled_font-demo.html') format('embedded-opentype'),
@@ -8,16 +8,16 @@
 }
 
 @font-face{ 
-	font-family: 'bfccoffeeshop_1';
+	font-family: 'bfccoffeeshop';
 	src: url('bfccoffeeshop_1-demo.html');
 	src: url('bfccoffeeshop_1-demo.html') format('embedded-opentype'),
 	     url('bfccoffeeshop_1-webfront.woff') format('woff'),
 	     url('bfccoffeeshop_1-demo.html') format('truetype'),
 	     url('bfccoffeeshop_1-demo.html') format('svg');
-}
+}*/
 
 body{
-  background-image: url("Weather\ background.png");
+  background-image: url("background.png");
   background-size: 100%;
   background-repeat:repeat-y;
 }
@@ -61,8 +61,7 @@ body{
 }
 
 #currentCity{
-  font-family:'bfccoffeeshop_1', 'Sanchez', serif;
-  font-weight: bold;
+  font-family:'bfccoffeeshop', 'Sanchez', serif;
   font-size: 50px;
 }
 
