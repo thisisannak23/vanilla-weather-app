@@ -7,6 +7,15 @@
 	     url('wonderul_wilderness_filled_font-demo.html') format('svg');
 }
 
+@font-face{ 
+	font-family: 'bfccoffeeshop_1';
+	src: url('bfccoffeeshop_1-demo.html');
+	src: url('bfccoffeeshop_1-demo.html') format('embedded-opentype'),
+	     url('bfccoffeeshop_1-webfront.woff') format('woff'),
+	     url('bfccoffeeshop_1-demo.html') format('truetype'),
+	     url('bfccoffeeshop_1-demo.html') format('svg');
+}
+
 body{
   background-image: url("Weather\ Wireframe\ \(1\).png");
   background-size: 100%;
@@ -37,6 +46,10 @@ body{
 #currentDetails {
   text-align: left;
   font-family: 'Sanchez', serif;
+}
+
+#currentCity{
+  font-family:'bfccoffeeshop_1', 'Sanchez', serif;
 }
 
 #currentInfo {
