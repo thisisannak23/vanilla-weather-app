@@ -10,10 +10,6 @@ ul li {
  list-style-type:none;
 }
 
-table{
-  padding-inline-start:5px;
-}
-
 #currentDetails{
   text-align:left;
 }
