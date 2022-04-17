@@ -1,16 +1,32 @@
 @font-face{ 
-	font-family: 'MyWebFont';
-	src: url('WebFont.eot');
-	src: url('WebFont.eot?#iefix') format('embedded-opentype'),
-	     url('WebFont.woff') format('woff'),
-	     url('WebFont.ttf') format('truetype'),
-	     url('WebFont.svg#webfont') format('svg');
+	font-family: 'wonderul_wilderness_filled_Rg';
+	src: url('wonderul_wilderness_filled_font-demo.html');
+	src: url('wonderul_wilderness_filled_font-demo.html') format('embedded-opentype'),
+	     url('wonderul_wilderness_filled_font-webfont.woff') format('woff'),
+	     url('wonderul_wilderness_filled_font-demo.html') format('truetype'),
+	     url('wonderul_wilderness_filled_font-demo.html') format('svg');
+}
+
+body{
+  background-image: url("Weather\ Wireframe\ \(1\).png");
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 #mainHeading {
   color: rgb(50, 34, 122);
-  font-family: 'WebFont', Arial, sans-serif;
+  font-family: 'wonderul_wilderness_filled_Rg', Arial, sans-serif;
   text-align: center;
+}
+
+#transparentBox{
+  background-color: aliceblue;
+  border: solid black 3px;
+  opacity: 0.5;
+}
+
+#boxWords{
+  color:black;
 }
 
 ul li {
@@ -43,3 +59,8 @@ ul li {
 #dayTime{
   font-family: 'Sanchez', serif;
 }
+
+.weekDay{
+  font-family: 'Sanchez', serif;
+}
+
