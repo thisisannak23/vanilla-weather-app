@@ -32,8 +32,11 @@ table{
 }
 
 ul li {
-  padding: 0px;
   list-style-type: none;
+}
+
+ul{
+  padding:0%;
 }
 
 #currentDetails {
@@ -64,11 +67,4 @@ ul li {
 
 .weekDay{
   font-family: 'Sanchez', serif;
-}
-
-td{
-  padding-top: 10px;
-  padding-bottom: 20px;
-  padding-left: 30px;
-  padding-right: 40px;
 }
