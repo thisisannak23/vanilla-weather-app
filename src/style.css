@@ -1,25 +1,23 @@
-
 #mainHeading {
   color: rgb(1, 199, 133);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  text-align:center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
 }
 
 ul li {
- padding: 0px;
- list-style-type:none;
+  padding: 0px;
+  list-style-type: none;
 }
 
-#currentDetails{
-  text-align:left;
+#currentDetails {
+  text-align: left;
 }
 
-#currentInfo{
-  text-align:right;
+#currentInfo {
+  text-align: right;
 }
 
 .forecastDays {
   border: solid black 3px;
-  text-align:center;
+  text-align: center;
 }
-
