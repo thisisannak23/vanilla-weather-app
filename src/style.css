@@ -47,6 +47,17 @@ body{
 #currentDetails {
   text-align: left;
   font-family: 'Sanchez', serif;
+  font-size:32px;
+}
+
+.grid{
+  margin:auto;
+  position:sticky;
+  display:flex;
+}
+
+.g-col-3{
+  white-space:wrap;
 }
 
 #currentCity{
