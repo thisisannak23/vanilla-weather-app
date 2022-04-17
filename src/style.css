@@ -26,16 +26,19 @@ body{
   position:sticky;
 }
 
+.row{
+  padding: 5px;;
+}
+
 table{
   vertical-align: middle;
-  padding-left: 5px;
-  padding-right:5px;
+  border-spacing: 20px;
+  margin:auto;
 }
 
 ul {
   list-style-type: none;
-  margin:0;
-  padding:0;
+  padding-left: 0rem;
 }
 
 #currentDetails {
@@ -50,6 +53,7 @@ ul {
 .forecastDays {
   border: solid black 3px;
   text-align: center;
+  padding:15px;
 }
 
 .forecastTemp{
