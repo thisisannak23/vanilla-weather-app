@@ -56,12 +56,13 @@ table{
   border-spacing: 5px;
   margin:auto;
   text-align: center;
+  padding: 5px;
 }
 
 .forecastDays {
   border: solid black 3px;
   text-align: center;
-  padding:15px;
+  padding: 0px;
 }
 
 ul{
