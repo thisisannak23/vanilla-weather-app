@@ -27,16 +27,12 @@ body{
 }
 
 table{
-  width:800px;
+  width: auto;
   position:relative;
 }
 
 ul li {
   list-style-type: none;
-}
-
-ul{
-  padding:0%;
 }
 
 #currentDetails {
