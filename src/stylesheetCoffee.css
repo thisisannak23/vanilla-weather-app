@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'bfccoffeeshop_1';
+    src: url('bfccoffeeshop_1-webfront.woff2') format('woff2'),
+         url('bfccoffeeshop_1-webfront.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
