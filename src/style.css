@@ -41,6 +41,7 @@ body{
 
 #currentTemp{
   font-size: 108px;
+  font-family: 'Sanchez', serif;
 }
 
 #currentDetails {
