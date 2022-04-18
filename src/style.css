@@ -1,21 +1,3 @@
-/*@font-face{ 
-	font-family: 'wonderul_wilderness_filled_Rg';
-	src: url('wonderul_wilderness_filled_font-demo.html');
-	src: url('wonderul_wilderness_filled_font-demo.html') format('embedded-opentype'),
-	     url('wonderul_wilderness_filled_font-webfont.woff') format('woff'),
-	     url('wonderul_wilderness_filled_font-demo.html') format('truetype'),
-	     url('wonderul_wilderness_filled_font-demo.html') format('svg');
-}
-
-@font-face{ 
-	font-family: 'bfccoffeeshop';
-	src: url('bfccoffeeshop_1-demo.html');
-	src: url('bfccoffeeshop_1-demo.html') format('embedded-opentype'),
-	     url('bfccoffeeshop_1-webfront.woff') format('woff'),
-	     url('bfccoffeeshop_1-demo.html') format('truetype'),
-	     url('bfccoffeeshop_1-demo.html') format('svg');
-}*/
-
 body{
   background-image: url("background.png");
   background-size: 100%;
@@ -36,7 +18,7 @@ body{
 }
 
 .row{
-  padding: 5px;
+  padding: 3px;
 }
 
 #currentTemp{
@@ -50,18 +32,8 @@ body{
   font-size:32px;
 }
 
-.grid{
-  row-gap: 3px;
-  position:sticky;
-  display:flex;
-}
-
-.g-col-3{
-  white-space:wrap;
-}
-
 #currentCity{
-  font-family:'bfccoffeeshop', 'Sanchez', serif;
+  font-family:'bfccoffeeshop_1', 'Sanchez', serif;
   font-size: 50px;
 }
 

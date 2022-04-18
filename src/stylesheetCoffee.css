@@ -4,5 +4,13 @@
          url('bfccoffeeshop_1-webfront.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
 
+@font-face{ 
+	font-family: 'bfccoffeeshop';
+	src: url('bfccoffeeshop_1-demo.html');
+	src: url('bfccoffeeshop_1-demo.html') format('embedded-opentype'),
+	     url('bfccoffeeshop_1-webfront.woff') format('woff'),
+	     url('bfccoffeeshop_1-demo.html') format('truetype'),
+	     url('bfccoffeeshop_1-demo.html') format('svg');
 }

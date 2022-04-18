@@ -6,3 +6,12 @@
     font-style: normal;
 
 }
+
+@font-face{ 
+	font-family: 'wonderul_wilderness_filled_Rg';
+	src: url('wonderul_wilderness_filled_font-demo.html');
+	src: url('wonderul_wilderness_filled_font-demo.html') format('embedded-opentype'),
+	     url('wonderul_wilderness_filled_font-webfont.woff') format('woff'),
+	     url('wonderul_wilderness_filled_font-demo.html') format('truetype'),
+	     url('wonderul_wilderness_filled_font-demo.html') format('svg');
+}
