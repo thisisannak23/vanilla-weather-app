@@ -33,7 +33,7 @@ body{
 }
 
 #currentCity{
-  font-family: 'dtc_sunsetsweetheartregular', sans-serif;
+  font-family: 'bfc_coffee_shopregular', sans-serif;
   font-size: 48px;
 }
 
@@ -75,7 +75,8 @@ ul{
 }
 
 .weekDay{
-  font-family: 'Sanchez', serif;
+  font-family:'bfc_coffee_shopregular', serif;
+  font-weight: lighter;
 }
 
 .forecastTemp{
