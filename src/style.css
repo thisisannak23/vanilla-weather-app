@@ -1,3 +1,11 @@
+@font-face{ 
+	font-family: 'dtcsunsetsweetheart';
+	src: url('dtcsunsetsweetheart.eot');
+	src: url('dtcsunsetsweetheart.eot?#iefix') format('embedded-opentype'),
+	     url('dtcsunsetsweetheart.woff') format('woff'),
+	     url('dtcsunsetsweetheart.ttf') format('truetype'),
+	     url('dtcsunsetsweetheart.svg#dtcsunsetsweetheart') format('svg');}
+
 body{
   background-image: url("background.png");
   background-size: 100%;
@@ -33,7 +41,7 @@ body{
 }
 
 #currentCity{
-  font-family: 'Sanchez', serif;
+  font-family: 'dtcsunsetsweetheart' serif;
   font-size: 48px;
 }
 
