@@ -15,3 +15,11 @@
 	     url('wonderul_wilderness_filled_font-demo.html') format('truetype'),
 	     url('wonderul_wilderness_filled_font-demo.html') format('svg');
 }
+
+@font-face{ 
+	font-family: 'dtcsunsetsweetheart';
+	src: url('dtcsunsetsweetheart.eot');
+	src: url('dtcsunsetsweetheart.eot?#iefix') format('embedded-opentype'),
+	     url('dtcsunsetsweetheart.woff') format('woff'),
+	     url('dtcsunsetsweetheart.ttf') format('truetype'),
+	     url('dtcsunsetsweetheart.svg#dtcsunsetsweetheart') format('svg');}
