@@ -57,6 +57,14 @@ body{
   padding-bottom: 0px;
 }
 
+#lastUpdate{
+  font-family: 'sanchez', serif;
+}
+
+.row::first-letter{
+  text-transform: capitalize;
+}
+
 #currentTemp{
   font-size: 100px;
   font-family: 'Sanchez', serif;
