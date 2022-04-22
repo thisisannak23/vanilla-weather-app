@@ -11,9 +11,17 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="src/style.css" />
-    <link rel="stylesheet" href="src/stylesheet.css" type="text/css" charset="utf-8"/>
-    <link rel="stylesheet" href="src/grid_12-825-55-15.css"/>
-    <style>@import url("https://fonts.googleapis.com/css2?family=Sanchez:ital@0;1&display=swap");</style>
+    <link
+      rel="stylesheet"
+      href="src/stylesheet.css"
+      type="text/css"
+      charset="utf-8"
+    />
+    <link rel="stylesheet" href="src/grid_12-825-55-15.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Sanchez:ital@0;1&display=swap");
+    </style>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
     <title>Weather App</title>
   </head>
@@ -24,6 +32,9 @@
 
       <div id="transparentBox" width="100%">
         <div class="row" width="100%">
+          <form id="searchAndButton" width="100%"><input type="text" id="searchBar" class="search"  placeholder="Enter City"/>
+            <input type="submit" id="button"/></form>
+
           <div class="col-3">
             <img
               src="src\sunclouds.png"
@@ -32,71 +43,83 @@
               id="currentPic"
             />
           </div>
-          <div id="currentTemp" class="col-3">45°</div>
+          <div id="currentTemp" class="col-3"><span>°</span></div>
           <div id="currentDetails" class="col-3">
             <ul>
-              <li id="precip">Precipitation: 5 inches</li>
-              <li id="humidity">Humidity:100%</li>
-              <li id="windSpeed">Wind: 5mph</li>
+              <li id="humidity">Humidity: <span id="humidityPercent"></span>%</li>
+              <li id="windSpeed">Wind: <span id= "windSpeedMPH"></span>mph</li>
             </ul>
           </div>
           <div id="currentInfo" class="col-3">
             <ul>
-              <li id="currentCity">St. Louis, MO</li>
+              <li id="currentCity"></li>
               <li id="dayTime">Saturday 3:00pm</li>
-              <li id="currentDescrip">Partly Cloudy</li>
+              <li id="currentDescrip"></li>
             </ul>
           </div>
         </div>
-
         <table width="100%">
           <tr>
-            <img src="frame.png" alt="frame"><th id="day1" class="forecastDays" rowspan="3" width="20%">
-              <ul class="list-group list-group-flush" >
+            <th id="day1" class="forecastDays" rowspan="3" width="15%">
+              <ul class="list-group list-group-flush">
                 <li class="weekDay" class="list-group-item">Monday</li>
-                <li id="day1Icon" class="icon"><img src="src\foggy.png" alt="foggy"></li>
+                <li id="day1Icon" class="icon">
+                  <img src="src\foggy.png" alt="foggy" />
+                </li>
                 <li id="day1Temp" class="forecastTemp">65°</li>
               </ul>
-            </img>
             </th>
 
-            <th id="day2" class="forecastDays" rowspan="3" width="20%">
+            <th id="day2" class="forecastDays" rowspan="3" width="15%">
               <ul class="list-group list-group-flush">
                 <li class="weekDay" class="list-group-item">Tuesday</li>
-                <li id="day2Icon" class="icon"><img src="src\bluecloud.png" alt="cloudy"></li>
+                <li id="day2Icon" class="icon">
+                  <img src="src\bluecloud.png" alt="cloudy" />
+                </li>
                 <li id="day2Temp" class="forecastTemp">5°</li>
               </ul>
             </th>
 
-            <th id="day3" class="forecastDays" rowspan="3" width="20%">
+            <th id="day3" class="forecastDays" rowspan="3" width="15%">
               <ul class="list-group list-group-flush">
                 <li class="weekDay" class="list-group-item">Wednesday</li>
-                <li id="day3Icon" class="icon"><img src="src\windycloud.png" alt="windy"></li>
+                <li id="day3Icon" class="icon">
+                  <img src="src\windycloud.png" alt="windy" />
+                </li>
                 <li id="day3Temp" class="forecastTemp">43°</li>
               </ul>
             </th>
 
-            <th id="day4" class="forecastDays" rowspan="3" width="20%">
+            <th id="day4" class="forecastDays" rowspan="3" width="15%">
               <ul class="list-group list-group-flush">
                 <li class="weekDay" class="list-group-item">Thursday</li>
-                <li id="day4Icon" class="icon" class="list-group-item"><img src="src\sun.png" alt="sunny"></li>
+                <li id="day4Icon" class="icon" class="list-group-item">
+                  <img src="src\sun.png" alt="sunny" />
+                </li>
                 <li id="day4Temp" class="forecastTemp" class="list-group-item">
                   88°
                 </li>
               </ul>
             </th>
 
-            <th id="day5" class="forecastDays" rowspan="3" width="20%">
+            <th id="day5" class="forecastDays" rowspan="3" width="15%">
               <ul class="list-group list-group-flush">
                 <li class="weekDay" class="list-group-item">Friday</li>
-                <li id="day5Icon" class="icon" class="list-group-item"><img src="src\lightningcloud.png" alt="lightningcloud"></li>
+                <li id="day5Icon" class="icon" class="list-group-item">
+                  <img src="src\lightningcloud.png" alt="lightningcloud" />
+                </li>
                 <li id="day5Temp" class="forecastTemp" class="list-group-item">
                   22°
                 </li>
               </ul>
             </th>
             <caption>
-              Coded by Anna
+              <a
+                href="https://github.com/thisisannak23/vanilla-weather-app"
+                id="githubLink"
+                >Open Source Code</a
+              >
+              by Anna Kazanecki
             </caption>
           </tr>
         </table>

@@ -11,14 +11,50 @@ body{
   font-size: 95px;
 }
 
+#searchBar {
+  text-align: center;
+  border-radius: 10px;
+  border-color: black;
+  border-width: 3px;
+  font-size: 20px;
+  color:#000000;
+  margin-right: 5px;
+}
+
+#button {
+  border-radius:10px;
+  border-color:black;
+  border-width:3px;
+  font-size: 20px;
+  background-color:#92E5F6;
+}
+
+#button:hover{
+  background-color: #1DBAC5;
+}
+
+#searchAndButton {
+  display:flex;
+  font-family:'Sanchez', serif;
+  padding-top: 10px;
+  justify-content: center;
+}
+
 #transparentBox{
   background-color: rgba(255, 255, 255, 0.514);
   border:transparent;
   position:sticky;
 }
 
+#currentPic{
+  align-content: center;
+}
+
 .row{
-  padding: 3px;
+  padding-left: 20px;
+  padding-right:20px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 #currentTemp{
@@ -30,11 +66,12 @@ body{
   text-align: left;
   font-family: 'Sanchez', serif;
   font-size:28px;
+  padding-top:18px;
 }
 
 #currentCity{
   font-family: 'bfc_coffee_shopregular', sans-serif;
-  font-size: 48px;
+  font-size: 40px;
 }
 
 #currentInfo {
@@ -44,6 +81,7 @@ body{
 
 #currentDescrip{
   font-family: 'Sanchez', serif;
+  text-transform: capitalize;
 }
 
 #dayTime{
@@ -55,7 +93,8 @@ table{
   border-spacing: 5px;
   margin:auto;
   text-align: center;
-  padding: 5px;
+  padding-left: 5px;
+  padding-right:5px;
 }
 
 .forecastDays {
@@ -67,10 +106,7 @@ table{
 ul{
   display: block;
   list-style-type: none;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  margin-left: 0;
-  margin-right: 0;
+  margin: 0px;
   padding-left: 0px;
 }
 
@@ -81,5 +117,13 @@ ul{
 
 .forecastTemp{
   font-family: 'Sanchez', serif;
+  font-weight: normal;
 }
 
+caption{
+  font-family:'bfc_coffee_shopregular', 'Sanchez';
+}
+
+#githubLink{
+  color:black;
+}
