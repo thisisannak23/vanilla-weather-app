@@ -11,25 +11,29 @@ function formatDate(timestamp) {
 }
 
 function displayTemperature(response) {
-  console.log(response.data);
   let currentTemp = document.querySelector("#currentTemp");
   let currentCity = document.querySelector("#currentCity");
   let humidityPercent = document.querySelector("#humidityPercent");
   let windSpeedMPH = document.querySelector("#windSpeedMPH");
   let currentDescrip = document.querySelector("#currentDescrip");
   let dayTime = document.querySelector("#dayTime");
+  let currentPic = document.querySelector("#currentPic");
+
+
   currentTemp.innerHTML = Math.round(response.data.main.temp);
   currentCity.innerHTML = (response.data.name);
   humidityPercent.innerHTML = Math.round(response.data.main.humidity);
   windSpeedMPH.innerHTML = Math.round(response.data.wind.speed);
   currentDescrip.innerHTML = (response.data.weather[0].description);
   dayTime.innerHTML = formatDate(response.data.dt * 1000);
+  currentPic.innerHTML = `${response.data.}`;
 }
 
 
 let apiKey = "f9de746b9d23a9c915974277fc1710ae";
+let city = "Chicago"
 let currentApiUrl =
-  `https://api.openweathermap.org/data/2.5/weather?q=saint louis&appid=${apiKey}&units=imperial`;
+  `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
 
 axios.get(currentApiUrl).then(displayTemperature);
 
