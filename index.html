@@ -32,12 +32,19 @@
 
       <div id="transparentBox" width="100%">
         <div class="row" width="100%">
-          <form id="searchAndButton" width="100%"><input type="text" id="searchBar" class="search"  placeholder="Enter City"/>
-            <input type="submit" id="button"/></form>
+          <form id="searchAndButton" width="100%">
+            <input
+              type="text"
+              id="searchBar"
+              class="search"
+              placeholder="Enter City"
+            />
+            <input type="submit" id="button" />
+          </form>
 
           <div class="col-3">
             <img
-              src="src\sunclouds.png"
+              src="src\01d.png"
               alt="raining cloud"
               width="200px"
               id="currentPic"
@@ -46,15 +53,17 @@
           <div id="currentTemp" class="col-3"><span>°</span></div>
           <div id="currentDetails" class="col-3">
             <ul>
-              <li id="humidity">Humidity: <span id="humidityPercent"></span>%</li>
-              <li id="windSpeed">Wind: <span id= "windSpeedMPH"></span>mph</li>
+              <li id="currentDescrip"></li>
+              <li id="humidity">
+                Humidity: <span id="humidityPercent"></span>%
+              </li>
+              <li id="windSpeed">Wind: <span id="windSpeedMPH"></span>mph</li>
             </ul>
           </div>
           <div id="currentInfo" class="col-3">
             <ul>
               <li id="currentCity"></li>
               <li id="lastUpdate">Last updated: <span id="dayTime"></span></li>
-              <li id="currentDescrip"></li>
             </ul>
           </div>
         </div>
@@ -64,7 +73,7 @@
               <ul class="list-group list-group-flush">
                 <li class="weekDay" class="list-group-item">Monday</li>
                 <li id="day1Icon" class="icon">
-                  <img src="src\foggy.png" alt="foggy" />
+                  <img src="src\50d.png" alt="foggy" />
                 </li>
                 <li id="day1Temp" class="forecastTemp">65°</li>
               </ul>
@@ -94,7 +103,7 @@
               <ul class="list-group list-group-flush">
                 <li class="weekDay" class="list-group-item">Thursday</li>
                 <li id="day4Icon" class="icon" class="list-group-item">
-                  <img src="src\sun.png" alt="sunny" />
+                  <img src="src\01d.png" alt="sunny" />
                 </li>
                 <li id="day4Temp" class="forecastTemp" class="list-group-item">
                   88°
@@ -106,7 +115,7 @@
               <ul class="list-group list-group-flush">
                 <li class="weekDay" class="list-group-item">Friday</li>
                 <li id="day5Icon" class="icon" class="list-group-item">
-                  <img src="src\lightningcloud.png" alt="lightningcloud" />
+                  <img src="src\10d.png" alt="lightningcloud" />
                 </li>
                 <li id="day5Temp" class="forecastTemp" class="list-group-item">
                   22°

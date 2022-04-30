@@ -17,18 +17,17 @@ function displayTemperature(response) {
   let windSpeedMPH = document.querySelector("#windSpeedMPH");
   let currentDescrip = document.querySelector("#currentDescrip");
   let dayTime = document.querySelector("#dayTime");
-  let currentPic = document.querySelector("#currentPic");
+  //let currentPic = document.querySelector("#currentPic");
 
 
-  currentTemp.innerHTML = Math.round(response.data.main.temp);
+  currentTemp.innerHTML = `${Math.round(response.data.main.temp)}°`;
   currentCity.innerHTML = (response.data.name);
   humidityPercent.innerHTML = Math.round(response.data.main.humidity);
   windSpeedMPH.innerHTML = Math.round(response.data.wind.speed);
   currentDescrip.innerHTML = (response.data.weather[0].description);
   dayTime.innerHTML = formatDate(response.data.dt * 1000);
-  currentPic.innerHTML = `${response.data.}`;
+  //currentPic.innerHTML = `${response.data.}`;
 }
-
 
 let apiKey = "f9de746b9d23a9c915974277fc1710ae";
 let city = "Chicago"
