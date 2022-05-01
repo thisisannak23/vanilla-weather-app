@@ -26,9 +26,11 @@ function displayTemperature(response) {
   windSpeedMPH.innerHTML = Math.round(response.data.wind.speed);
   currentDescrip.innerHTML = (response.data.weather[0].description);
   dayTime.innerHTML = formatDate(response.data.dt * 1000);
-  currentPic.setAttribute = ("src", `src/${response.data.weather[0].icon}.png`);
-  currentPic.setAttribute = ("alt", response.data.weather[0].description);
+  currentPic.setAttribute ("src", `src/${response.data.weather[0].icon}.png`);
+  currentPic.setAttribute ("alt", response.data.weather[0].description);
 }
+
+/*C:\Users\annak\Desktop\GitHub Project\vanilla-weather-app\src\04d.png*/
 
 function search(city) {
   let apiKey = "f9de746b9d23a9c915974277fc1710ae";
