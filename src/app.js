@@ -13,10 +13,38 @@ function formatDate(timestamp) {
     "Wednesday",
     "Thursday",
     "Friday",
-    "Saturday",
+    "Saturday"
   ];
   let day = days[date.getDay()];
   return `${day} ${hours}:${minutes}`;
+}
+
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row">`;
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday"
+  ];
+  days.forEach(function (day) {
+    forecastHTML = forecastHTML +
+      `  <div class="col-2">
+    <div class="forecastDate">${day}</div>
+    <img src="src/01d.png" alt="description" width="100px"/>
+    <div class="forecastTemps">
+      <span class="forecastTempMax">25</span>
+      <span class="forecastTempMin">15</span>
+    </div>
+  </div>
+`;
+  })
+  forecastHTML = forecastHTML+`</div>`;
+  forecastElement.innerHTML = forecastHTML;
 }
 
 function displayTemperature(response) {
@@ -81,3 +109,4 @@ let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahrenheitTemp);
 
 search("St. Louis");
+displayForecast();
