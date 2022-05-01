@@ -5,8 +5,16 @@ function formatDate(timestamp) {
   if (minutes < 10) {
     minutes = `0${minutes}`;
   }
-  
-    let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
   let day = days[date.getDay()];
   return `${day} ${hours}:${minutes}`;
 }
@@ -24,10 +32,10 @@ function displayTemperature(response) {
   currentCity.innerHTML = response.data.name;
   humidityPercent.innerHTML = Math.round(response.data.main.humidity);
   windSpeedMPH.innerHTML = Math.round(response.data.wind.speed);
-  currentDescrip.innerHTML = (response.data.weather[0].description);
+  currentDescrip.innerHTML = response.data.weather[0].description;
   dayTime.innerHTML = formatDate(response.data.dt * 1000);
-  currentPic.setAttribute ("src", `src/${response.data.weather[0].icon}.png`);
-  currentPic.setAttribute ("alt", response.data.weather[0].description);
+  currentPic.setAttribute("src", `src/${response.data.weather[0].icon}.png`);
+  currentPic.setAttribute("alt", response.data.weather[0].description);
 }
 
 /*C:\Users\annak\Desktop\GitHub Project\vanilla-weather-app\src\04d.png*/
