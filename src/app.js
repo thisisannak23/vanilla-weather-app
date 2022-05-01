@@ -19,9 +19,9 @@ function formatDate(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 
-function displayForecast() {
+function displayForecast(response) {
+  console.log(response.data.daily);
   let forecastElement = document.querySelector("#forecast");
-  let forecastHTML = `<div class="row">`;
   let days = [
     "Sunday",
     "Monday",
@@ -31,9 +31,10 @@ function displayForecast() {
     "Friday",
     "Saturday"
   ];
+  let forecastHTML = `<div class="row">`;
   days.forEach(function (day) {
     forecastHTML = forecastHTML +
-      `  <div class="col-2">
+      `<div class="col-2">
     <div class="forecastDate">${day}</div>
     <img src="src/01d.png" alt="description" width="100px"/>
     <div class="forecastTemps">
@@ -42,9 +43,16 @@ function displayForecast() {
     </div>
   </div>
 `;
-  })
+  });
   forecastHTML = forecastHTML+`</div>`;
   forecastElement.innerHTML = forecastHTML;
+}
+
+function getForecast(coordinates) {
+  console.log(coordinates);
+  let apiKey = "f9de746b9d23a9c915974277fc1710ae";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=imperial`;
+  axios.get(apiUrl).then(displayForecast);
 }
 
 function displayTemperature(response) {
@@ -66,6 +74,9 @@ function displayTemperature(response) {
   dayTime.innerHTML = formatDate(response.data.dt * 1000);
   currentPic.setAttribute("src", `src/${response.data.weather[0].icon}.png`);
   currentPic.setAttribute("alt", response.data.weather[0].description);
+
+  getForecast(response.data.coord);
+
 }
 
 function search(city) {
@@ -109,4 +120,3 @@ let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahrenheitTemp);
 
 search("St. Louis");
-displayForecast();
