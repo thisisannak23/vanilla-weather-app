@@ -1,12 +1,12 @@
-body{
+body {
   background-image: url("background.png");
   background-size: 100%;
-  background-repeat:repeat-y;
+  background-repeat: repeat-y;
 }
 
 #mainHeading {
   color: rgb(0, 0, 0);
-  font-family: 'wonderul_wilderness_filled_Rg', Arial, sans-serif;
+  font-family: "wonderul_wilderness_filled_Rg", Arial, sans-serif;
   text-align: center;
   font-size: 95px;
 }
@@ -17,92 +17,117 @@ body{
   border-color: black;
   border-width: 3px;
   font-size: 20px;
-  color:#000000;
+  color: #000000;
   margin-right: 5px;
 }
 
 #button {
-  border-radius:10px;
-  border-color:black;
-  border-width:3px;
+  border-radius: 10px;
+  border-color: black;
+  border-width: 3px;
   font-size: 20px;
-  background-color:#92E5F6;
+  background-color: #92e5f6;
 }
 
-#button:hover{
-  background-color: #1DBAC5;
+#button:hover {
+  background-color: #1dbac5;
 }
 
 #searchAndButton {
-  display:flex;
-  font-family:'Sanchez', serif;
+  display: flex;
+  font-family: "Sanchez", serif;
   padding-top: 10px;
   justify-content: center;
 }
 
-#transparentBox{
+#transparentBox {
   background-color: rgba(255, 255, 255, 0.514);
-  border:transparent;
-  position:sticky;
+  border: transparent;
+  position: sticky;
 }
 
-#currentPic{
+#currentPic {
   align-content: center;
 }
 
-.row{
+.row {
   padding-left: 20px;
-  padding-right:20px;
+  padding-right: 20px;
   padding-top: 0px;
   padding-bottom: 0px;
 }
 
-#lastUpdate{
-  font-family: 'sanchez', serif;
+#lastUpdate {
+  font-family: "sanchez", serif;
 }
 
-.row::first-letter{
+.row::first-letter {
   text-transform: capitalize;
 }
 
-#currentTemp{
+#currentTemp {
   font-size: 100px;
-  font-family: 'Sanchez', serif;
+  font-family: "Sanchez", serif;
+}
+
+.active {
+  cursor: default;
+  text-decoration: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #1dbac5;
+}
+
+#units {
+  font-size: 24px;
+  font-family: "Sanchez", serif;
+  text-align: center;
+}
+
+#units.hover {
+  color: #1dbac5;
+  text-decoration: none;
 }
 
 #currentDetails {
   text-align: left;
-  font-family: 'Sanchez', serif;
-  font-size:28px;
-  padding-top:18px;
+  font-family: "Sanchez", serif;
+  font-size: 28px;
+  padding-top: 18px;
 }
 
-#currentCity{
-  font-family: 'bfc_coffee_shopregular', sans-serif;
+#currentCity {
+  font-family: "bfc_coffee_shopregular", sans-serif;
   font-size: 40px;
 }
 
 #currentInfo {
   text-align: right;
-  font-size:28px;
+  font-size: 28px;
 }
 
-#currentDescrip{
-  font-family: 'Sanchez', serif;
+#currentDescrip {
+  font-family: "Sanchez", serif;
   text-transform: capitalize;
 }
 
-#dayTime{
-  font-family: 'Sanchez', serif;
+#dayTime {
+  font-family: "Sanchez", serif;
 }
 
-table{
+table {
   vertical-align: middle;
   border-spacing: 5px;
-  margin:auto;
+  margin: auto;
   text-align: center;
   padding-left: 5px;
-  padding-right:5px;
+  padding-right: 5px;
 }
 
 .forecastDays {
@@ -111,27 +136,27 @@ table{
   font-size: 40px;
 }
 
-ul{
+ul {
   display: block;
   list-style-type: none;
   margin: 0px;
   padding-left: 0px;
 }
 
-.weekDay{
-  font-family:'bfc_coffee_shopregular', serif;
+.weekDay {
+  font-family: "bfc_coffee_shopregular", serif;
   font-weight: lighter;
 }
 
-.forecastTemp{
-  font-family: 'Sanchez', serif;
+.forecastTemp {
+  font-family: "Sanchez", serif;
   font-weight: normal;
 }
 
-caption{
-  font-family:'bfc_coffee_shopregular', 'Sanchez';
+caption {
+  font-family: "bfc_coffee_shopregular", "Sanchez";
 }
 
-#githubLink{
-  color:black;
+#githubLink {
+  color: black;
 }

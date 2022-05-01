@@ -28,6 +28,8 @@ function displayTemperature(response) {
   let dayTime = document.querySelector("#dayTime");
   let currentPic = document.querySelector("#currentPic");
 
+  fahrenheitTemp = response.data.main.temp;
+
   currentTemp.innerHTML = `${Math.round(response.data.main.temp)}°`;
   currentCity.innerHTML = response.data.name;
   humidityPercent.innerHTML = Math.round(response.data.main.humidity);
@@ -37,8 +39,6 @@ function displayTemperature(response) {
   currentPic.setAttribute("src", `src/${response.data.weather[0].icon}.png`);
   currentPic.setAttribute("alt", response.data.weather[0].description);
 }
-
-/*C:\Users\annak\Desktop\GitHub Project\vanilla-weather-app\src\04d.png*/
 
 function search(city) {
   let apiKey = "f9de746b9d23a9c915974277fc1710ae";
@@ -52,7 +52,32 @@ function citySearch(event) {
   search(cityInput.value);
 }
 
-search("St. Louis");
+function displayCelsTemp(event) {
+  event.preventDefault();
+  let celsTemperature = (fahrenheitTemp - 32) / 1.8;
+  fahrenheitLink.classList.remove("active");
+  celsLink.classList.add("active");
+  let currentTemp = document.querySelector("#currentTemp");
+  currentTemp.innerHTML = `${Math.round(celsTemperature)}°`;
+}
+
+function displayFahrenheitTemp(event) {
+  event.preventDefault();
+  fahrenheitLink.classList.add("active");
+  celsLink.classList.remove("active");
+  let currentTemp = document.querySelector("#currentTemp");
+  currentTemp.innerHTML = `${Math.round(fahrenheitTemp)}°`;
+}
+
+let fahrenheitTemp = null;
 
 let form = document.querySelector("#searchAndButton");
 form.addEventListener("submit", citySearch);
+
+let celsLink = document.querySelector("#celsLink");
+celsLink.addEventListener("click", displayCelsTemp);
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", displayFahrenheitTemp);
+
+search("St. Louis");
