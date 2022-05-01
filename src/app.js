@@ -26,7 +26,7 @@ function displayTemperature(response) {
   windSpeedMPH.innerHTML = Math.round(response.data.wind.speed);
   currentDescrip.innerHTML = (response.data.weather[0].description);
   dayTime.innerHTML = formatDate(response.data.dt * 1000);
-  currentPic.setAttribute = ("src", `src/${response.data.weather[0].icon}d.png`);
+  currentPic.setAttribute = ("src", `src/${response.data.weather[0].icon}.png`);
   currentPic.setAttribute = ("alt", response.data.weather[0].description);
 }
 
