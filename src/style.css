@@ -59,6 +59,7 @@ body {
 
 #lastUpdate {
   font-family: "sanchez", serif;
+  font-size: 24px;
 }
 
 .row::first-letter {
@@ -68,6 +69,7 @@ body {
 #currentTemp {
   font-size: 100px;
   font-family: "Sanchez", serif;
+  text-align: center;
 }
 
 .active {
@@ -90,6 +92,14 @@ a:hover {
   text-align: center;
 }
 
+.units{
+  text-align: center;
+}
+
+.forecastIcons{
+ align-self: center;
+}
+
 #units.hover {
   color: #1dbac5;
   text-decoration: none;
@@ -98,7 +108,7 @@ a:hover {
 #currentDetails {
   text-align: left;
   font-family: "Sanchez", serif;
-  font-size: 28px;
+  font-size: 24px;
   padding-top: 18px;
 }
 
@@ -109,7 +119,8 @@ a:hover {
 
 #currentInfo {
   text-align: right;
-  font-size: 28px;
+  font-size: 24px;
+  vertical-align: middle;
 }
 
 #currentDescrip {
@@ -117,23 +128,23 @@ a:hover {
   text-transform: capitalize;
 }
 
+.forecast{
+  text-align: center;
+}
+
+img.forecastIcons{
+  vertical-align: middle;
+}
+
 #dayTime {
   font-family: "Sanchez", serif;
 }
 
-table {
-  vertical-align: middle;
-  border-spacing: 5px;
-  margin: auto;
-  text-align: center;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-.forecastDays {
+.forecastDate {
+  font-family: "bfc_coffee_shopregular", serif;
   text-align: center;
   padding: 0px;
-  font-size: 40px;
+  font-size: 34px;
 }
 
 ul {
@@ -143,20 +154,32 @@ ul {
   padding-left: 0px;
 }
 
-.weekDay {
-  font-family: "bfc_coffee_shopregular", serif;
-  font-weight: lighter;
-}
-
-.forecastTemp {
-  font-family: "Sanchez", serif;
+.forecastTemps {
+  font-family: "sanchez", serif;
   font-weight: normal;
+  font-size: 24px;
+  text-align:center;
 }
 
-caption {
-  font-family: "bfc_coffee_shopregular", "Sanchez";
+.forecastTempMax{
+  font-weight:bold;
+}
+
+.forecastTempMin{
+  font-weight:lighter;
+}
+
+#divider{
+  display: inline;
+  font-weight: 100;
+}
+
+#credit {
+  font-family: "Sanchez", serif;
+  font-size:smaller;
 }
 
 #githubLink {
   color: black;
+  font-family: "bfc_coffee_shopregular","Sanchez";
 }
